@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Tiffany's Gem Game</title>
+    <title>Breakfast at Tiffany's Budget Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
@@ -17,34 +17,37 @@
     <div id="container">
 
    
-        <h1>Breakfast at Tiffany's</h1>
+        <h1>Breakfast & Shopping at Tiffany's</h1>
         
-        <img class="gembox" src="assets/images/insidetiff.jpg">
+        
+            <img class="gembox" src="assets/images/insidetiff.jpg">
+            <img id="image" src="assets/images/breakfast.gif" width="250px" height="250px">
             <img id="red" src="assets/images/redring.jpg" width="200px" height="200px">
             <img id="green" src="assets/images/greenring.jpg" width="200px" height="200px">
             <img id="blue" src="assets/images/bluering.jpg" width="200px" height="200px">
             <img id="pink" src="assets/images/pinkring.jpg" width="100px" height="100px">
-
+  
         <div class="box1">
-            <h3>Wins 
+            <h3>Yay! You didn't go over your budget this many times:
                 <div id="wins"></div>
             </h3>
         </div>
         <div class="box2">
-            <h3>Losses
+            <h3>Oh No! You blew through your budget this many times:
+    
                 <div id="loss"></divx>
             </h3>
         </div>
-
+        
         <div class="box">
 
             <h3>
                 <div class="scores">
-                    Target Number:
+                    Your Budget:
                     <span id="targetnum"></span>
                 </div>
                 <div class="scores">
-                    Your Number:
+                    What You're Spending:
                     <span id="yournum"></span>
                 </div>
             </h3>

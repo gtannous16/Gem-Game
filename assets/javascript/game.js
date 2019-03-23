@@ -57,8 +57,8 @@ $(document).ready(function () {
 
     function check() {
         if (counter > targetNum) {
-            alert("SORRY, YOU LOST!");
-
+            alert("Oh no! You're gonna have to figure out a way to make this month's rent!")
+            document.getElementById("image").src = "./assets/images/sorrytryagain.gif"
             console.log("YOU LOST");
             losses++;
             $("#loss").html(losses);
@@ -66,7 +66,8 @@ $(document).ready(function () {
 
         }
         else if (counter == targetNum) {
-            alert("CONGRATS, YOU WON!");
+            alert("Great Job! You stuck to your budget!");
+            document.getElementById("image").src = "./assets/images/youwon.gif"
             console.log("YOU WIN!");
             wins++;
             $("#wins").html(wins);
@@ -75,7 +76,6 @@ $(document).ready(function () {
     }
 
     start()
-
     $("#red").on("click", function () {
         adding(gems.redGem);
     });
