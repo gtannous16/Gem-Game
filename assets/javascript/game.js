@@ -89,4 +89,6 @@ $(document).ready(function () {
     $("#green").on("click", function () {
         adding(gems.pinkGem);
     });
+
+  
 });

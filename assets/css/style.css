@@ -1,4 +1,8 @@
-
+button {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
 h1 {
     font-size: 70px;
     text-align: center;
@@ -107,4 +111,138 @@ span{
     position: absolute;
     top: 640px;
     left: 970px;
+}
+@media screen and (max-width:1400px) {
+    .gembox {
+        padding-left: 66px;
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+    #image {
+        position: absolute;
+        top: 540px;
+        left:250px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .gembox {
+        padding-left:0px;
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+    #image {
+        position: absolute;
+        top: 540px;
+        left:130px;
+    }
+    #red {
+        width: 100px;
+        height: 100px;
+        border: solid #0abab5 2px;
+        position: absolute;
+        top: 610px;
+        left: 450px;
+    }
+    
+    #blue {
+        width: 100px;
+        height: 100px;
+        border: solid #0abab5 2px;
+        position: absolute;
+        top: 610px;
+        left: 710px;
+    }
+    
+    #green{
+        width: 100px;
+        height: 100px;
+        border: solid #0abab5 2px;
+        position: absolute;
+        top: 610px;
+        left: 580px;
+    }
+    
+    #pink {
+        width: 100px;
+        height: 100px;
+        border: solid #0abab5 2px;
+        position: absolute;
+        top: 610px;
+        left: 840px;
+    }
+
+    .box1 {
+        position: absolute;
+        top: 850px;
+        left: 110px;
+    }
+    .box2 {
+        position: absolute;
+        top: 900px;
+        left: 110px;
+    }
+    .box {
+        position: absolute;
+        top: 380px;
+        left: 750px;
+    }
+}
+@media screen and (max-width:375px) {
+    .gembox {
+        padding-left:0px;
+        margin-top: 15%;
+        margin-bottom: 1%;
+    }
+    #image {
+        position: absolute;
+        top: 640px;
+        left:70px;
+    }
+    #red {
+        width: 100px;
+        height: 100px;
+        border: solid #0abab5 2px;
+        position: absolute;
+        top: 710px;
+        left: 400px;
+    }
+    
+    #blue {
+        position: absolute;
+        top: 710px;
+        left: 640px;
+    }
+    
+    #green{
+        position: absolute;
+        top: 710px;
+        left: 520px;
+    }
+    
+    #pink {
+        position: absolute;
+        top: 710px;
+        left: 760px;
+    }
+
+    .box1 {
+        position: absolute;
+        top: 950px;
+        left: 70px;
+    }
+    .box2 {
+        position: absolute;
+        top: 1010px;
+        left: 70px;
+    }
+    .box {
+        position: absolute;
+        top: 480px;
+        left: 690px;
+    }
+    h1 {
+       
+        text-align: center;
+    }
 }
