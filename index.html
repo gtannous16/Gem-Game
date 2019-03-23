@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tiffany's Gem Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=ITCTiffany" rel="stylesheet">
+    <link rel="icon" href="./assets/images/tiffanybox.jpeg" type="image">
+</head>
+
+<body background="assets/images/whitestorefront.jpg">
+ 
+    <div id="container">
+
+   
+        <h1>Breakfast at Tiffany's</h1>
+        
+        <img class="gembox" src="assets/images/insidetiff.jpg">
+            <img id="red" src="assets/images/redring.jpg" width="200px" height="200px">
+            <img id="green" src="assets/images/greenring.jpg" width="200px" height="200px">
+            <img id="blue" src="assets/images/bluering.jpg" width="200px" height="200px">
+            <img id="pink" src="assets/images/pinkring.jpg" width="100px" height="100px">
+
+        <div class="box1">
+            <h3>Wins 
+                <div id="wins"></div>
+            </h3>
+        </div>
+        <div class="box2">
+            <h3>Losses
+                <div id="loss"></divx>
+            </h3>
+        </div>
+
+        <div class="box">
+
+            <h3>
+                <div class="scores">
+                    Target Number:
+                    <span id="targetnum"></span>
+                </div>
+                <div class="scores">
+                    Your Number:
+                    <span id="yournum"></span>
+                </div>
+            </h3>
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
