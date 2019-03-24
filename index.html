@@ -13,20 +13,19 @@
 </head>
 
 <body background="assets/images/whitestorefront.jpg">
-  
+
     <div id="container">
 
-   
         <h1>Breakfast & Shopping at Tiffany's</h1>
-        
-        
-            <img class="gembox" src="assets/images/insidetiff.jpg">
-            <img id="image" src="assets/images/breakfast.gif" width="250px" height="250px">
-            <img id="red" src="assets/images/redring.jpg" width="200px" height="200px">
-            <img id="green" src="assets/images/greenring.jpg" width="200px" height="200px">
-            <img id="blue" src="assets/images/bluering.jpg" width="200px" height="200px">
-            <img id="pink" src="assets/images/pinkring.jpg" width="100px" height="100px">
-  
+
+        <!--inside store image that has all gems, gifs, & scores-->
+        <img class="gembox" src="assets/images/insidetiff.jpg">
+        <img id="image" src="assets/images/breakfast.gif" width="250px" height="250px">
+        <img id="red" src="assets/images/redring.jpg" width="200px" height="200px">
+        <img id="green" src="assets/images/greenring.jpg" width="200px" height="200px">
+        <img id="blue" src="assets/images/bluering.jpg" width="200px" height="200px">
+        <img id="pink" src="assets/images/pinkring.jpg" width="100px" height="100px">
+        <!--how many times you've won/lost-->
         <div class="box1">
             <h3>Yay! You didn't go over your budget this many times:
                 <div id="wins"></div>
@@ -34,13 +33,20 @@
         </div>
         <div class="box2">
             <h3>Oh No! You blew through your budget this many times:
-    
+
                 <div id="loss"></divx>
             </h3>
         </div>
-        
-        <div class="box">
+        <div id="instructions">
+            <h2>How to Shop:</h2>
+            <p>-Click on each Ring to find the hidden cost</p>
+            <p>-Keep clicking until you've reached the exact number of your budget</p>
+            <p>-Make sure not to go over your budget or you might not make rent!</p>
+            <p>*HINT* keep your math skills in mind so you don't go over your budget!</p>
+        </div>
 
+        <div class="box">
+            <!--spent vs random budget-->
             <h3>
                 <div class="scores">
                     Your Budget:
@@ -52,11 +58,14 @@
                 </div>
             </h3>
 
+       
+            <!--audio-->
             <div>
                 <audio id="moonriver">
                     <source src="./assets/audio/01 - Moon River-4-163.mp3" type="audio/mp3">
                 </audio>
             </div>
+            <!--javascript & jquery scripts-->
             <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
             <script src="./assets/javascript/game.js"></script>
 </body>

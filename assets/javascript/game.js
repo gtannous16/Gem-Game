@@ -1,25 +1,21 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    //VARIABLES 
+    //Variables
     var gems = {
-        redGem:
-        {
-        
+        redGem: {
+
             value: 0
         },
-        blueGem:
-        {
-        
+        blueGem: {
+
             value: 0
         },
-        greenGem:
-        {
-        
+        greenGem: {
+
             value: 0
         },
-        pinkGem:
-        {
-        
+        pinkGem: {
+
             value: 0
         },
     };
@@ -30,19 +26,19 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
+    //function, condition, loop
     function start() {
         counter = 0;
-        //Generate random # for target 
+        //Generate random # for player
         targetNum = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
         console.log("This is " + targetNum);
-        //random number to html id 
+        //adding the number to html
         $("#targetnum").html(targetNum);
 
         gems.redGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
         gems.blueGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
         gems.greenGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
         gems.pinkGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-
 
         $("#yournum").html(counter);
 
@@ -54,7 +50,10 @@ $(document).ready(function () {
         check();
         console.log("Your Score is  " + counter);
     }
-
+    //if player meets budget or overspends point gets added to win/loose 
+    //music plays regardless of win or loose
+    //the win/loose gif shows up
+    //alert pops up showing if you stuck to budget or spent too much
     function check() {
         if (counter > targetNum) {
             moonriver.play();
@@ -65,8 +64,7 @@ $(document).ready(function () {
             $("#loss").html(losses);
             start();
 
-        }
-        else if (counter == targetNum) {
+        } else if (counter == targetNum) {
             moonriver.play();
             alert("Great Job! You stuck to your budget!");
             document.getElementById("image").src = "./assets/images/youwon.gif"
@@ -78,18 +76,18 @@ $(document).ready(function () {
     }
 
     start()
-    $("#red").on("click", function () {
+    $("#red").on("click", function() {
         adding(gems.redGem);
     });
 
-    $("#blue").on("click", function () {
+    $("#blue").on("click", function() {
         adding(gems.blueGem);
     });
-    $("#pink").on("click", function () {
+    $("#pink").on("click", function() {
         adding(gems.greenGem);
     });
-    $("#green").on("click", function () {
+    $("#green").on("click", function() {
         adding(gems.pinkGem);
     });
-   
+
 });
