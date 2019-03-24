@@ -57,6 +57,7 @@ $(document).ready(function () {
 
     function check() {
         if (counter > targetNum) {
+            moonriver.play();
             alert("Oh no! You're gonna have to figure out a way to make this month's rent!")
             document.getElementById("image").src = "./assets/images/sorrytryagain.gif"
             console.log("YOU LOST");
@@ -66,6 +67,7 @@ $(document).ready(function () {
 
         }
         else if (counter == targetNum) {
+            moonriver.play();
             alert("Great Job! You stuck to your budget!");
             document.getElementById("image").src = "./assets/images/youwon.gif"
             console.log("YOU WIN!");
@@ -89,6 +91,5 @@ $(document).ready(function () {
     $("#green").on("click", function () {
         adding(gems.pinkGem);
     });
-
-  
+   
 });
