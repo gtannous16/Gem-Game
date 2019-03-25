@@ -30,15 +30,15 @@ $(document).ready(function() {
     function start() {
         counter = 0;
         //Generate random # for player
-        targetNum = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+        targetNum = Math.floor(Math.random() * (1200 - 190 + 1)) + 190;
         console.log("This is " + targetNum);
         //adding the number to html
         $("#targetnum").html(targetNum);
 
-        gems.redGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-        gems.blueGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-        gems.greenGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
-        gems.pinkGem.value = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+        gems.redGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
+        gems.blueGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
+        gems.greenGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
+        gems.pinkGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
 
         $("#yournum").html(counter);
 
