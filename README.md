@@ -1,4 +1,4 @@
-Live link to game:https://gtannous16.github.io/Unit-4-Game/
+Live link to game:https://gtannous16.github.io/Gem-Game/
 
 Game Objective: Lets go shopping at Tiffany's! Try to stick to your budget! 
 
