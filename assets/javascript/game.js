@@ -35,10 +35,10 @@ $(document).ready(function() {
         //adding the number to html
         $("#targetnum").html(targetNum);
 
-        gems.redGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
-        gems.blueGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
-        gems.greenGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
-        gems.pinkGem.value = Math.floor(Math.random() * (120 - 10 + 1)) + 10;
+        gems.redGem.value = Math.floor(Math.random() * (12 - 10 + 1)) + 10;
+        gems.blueGem.value = Math.floor(Math.random() * (12 - 10 + 1)) + 10;
+        gems.greenGem.value = Math.floor(Math.random() * (12 - 10 + 1)) + 10;
+        gems.pinkGem.value = Math.floor(Math.random() * (12 - 10 + 1)) + 10;
 
         $("#yournum").html(counter);
 
